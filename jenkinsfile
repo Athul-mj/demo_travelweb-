@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building demo_travelweb...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+            }
+        }
+        stage('Simulate Deploy') {
+            steps {
+                echo 'Simulating deployment (no server touched)...'
+            }
+        }
+    }
+}
